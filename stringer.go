@@ -7,7 +7,7 @@
 //Enumer is a tool to generate Go code that adds useful methods to Go enums (constants with a specific type).
 //It started as a fork of Rob Pike’s Stringer tool
 //
-//Please visit http://github.com/alvaroloes/enumer for a comprehensive documentation
+//Please visit http://github.com/IfCoffeeThenCode/enumer for a comprehensive documentation
 package main
 
 import (
@@ -20,13 +20,14 @@ import (
 	"go/importer"
 	"go/token"
 	"go/types"
-	"golang.org/x/tools/go/packages"
 	"io/ioutil"
 	"log"
 	"os"
 	"path/filepath"
 	"sort"
 	"strings"
+
+	"golang.org/x/tools/go/packages"
 
 	"github.com/pascaldekloe/name"
 )
@@ -66,7 +67,7 @@ func Usage() {
 	fmt.Fprintf(os.Stderr, "\tenumer [flags] -type T [directory]\n")
 	fmt.Fprintf(os.Stderr, "\tenumer [flags] -type T files... # Must be a single package\n")
 	fmt.Fprintf(os.Stderr, "For more information, see:\n")
-	fmt.Fprintf(os.Stderr, "\thttps://github.com/alvaroloes/enumer\n")
+	fmt.Fprintf(os.Stderr, "\thttps://github.com/IfCoffeeThenCode/enumer\n")
 	fmt.Fprintf(os.Stderr, "Flags:\n")
 	flag.PrintDefaults()
 }
